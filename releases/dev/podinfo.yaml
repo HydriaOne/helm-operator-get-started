@@ -1,4 +1,3 @@
----
 apiVersion: helm.fluxcd.io/v1
 kind: HelmRelease
 metadata:
@@ -17,6 +16,6 @@ spec:
     image:
       repository: hydria/podinfo
       tag: dev-rhhxpaLUL
-    replicaCount: 1
+    replicaCount: 3
     hpa:
       enabled: false
