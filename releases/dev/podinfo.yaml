@@ -16,7 +16,7 @@ spec:
   values:
     image:
       repository: hydria/podinfo
-      tag: dev-rhhxpam6
+      tag: dev-rhhxpaLUL
     replicaCount: 1
     hpa:
       enabled: false
