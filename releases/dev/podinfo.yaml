@@ -17,6 +17,6 @@ spec:
     image:
       repository: hydria/podinfo
       tag: dev-1234XD
-    replicaCount: 3
+    replicaCount: 1
     hpa:
       enabled: false
