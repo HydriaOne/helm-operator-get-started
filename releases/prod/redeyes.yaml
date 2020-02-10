@@ -1,0 +1,20 @@
+---
+apiVersion: helm.fluxcd.io/v1
+kind: HelmRelease
+metadata:
+  name: redeyes-prod
+  namespace: prod
+  annotations:
+    fluxcd.io/automated: "true"
+    filter.fluxcd.io/chart-image: semver:~0.4
+spec:
+  releaseName: redeyes-prod
+  chart:
+    git: git@github.com:HydriaOne/helm-operator-get-started
+    path: charts/redeyes
+    ref: master
+  values:
+    image:
+      repository: hydria/redeyes
+      tag: 0.4.11
+    replicaCount: 3

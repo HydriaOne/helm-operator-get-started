@@ -1,0 +1,12 @@
+apiVersion: v1
+version: 3.1.5
+appVersion: 3.1.5
+name: redeyes
+engine: gotpl
+description: redeyes Helm chart for Kubernetes
+home: https://github.com/stefanprodan/redeyes
+maintainers:
+- email: stefanprodan@users.noreply.github.com
+  name: stefanprodan
+sources:
+- https://github.com/stefanprodan/redeyes
